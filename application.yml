@@ -1,0 +1,9 @@
+logging:
+  level:
+    org.springframework.security: INFO
+
+security.basic.enabled: false
+
+spring.rabbitmq:
+  host: localhost
+  port: 5672

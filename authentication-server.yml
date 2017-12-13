@@ -1,0 +1,24 @@
+info:
+  component: OAuth Auth Server
+
+server:
+  contextPath: /uaa
+  port: 8081
+
+spring:
+  mvc:
+   view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: false
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  datasource:
+    url: jdbc:mysql://localhost:3306/umoja_auth?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+

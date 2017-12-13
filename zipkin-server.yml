@@ -1,0 +1,12 @@
+info:
+  component: Zipkin Tracing
+
+server:
+  port: 9411
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanExtractor: ERROR
+    org.springframework.cloud.sleuth.util.ExceptionUtils: ERROR
+
