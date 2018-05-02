@@ -26,8 +26,8 @@ spring:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
     url: jdbc:mysql://mysql_server:3306/umoja_auth?createDatabaseIfNotExist=true&useSSL=false
-    username: umoja
-    password: all$4interfaceft@umoja
+    username: root
+    password: password
     driver-class-name: com.mysql.jdbc.Driver
   rabbitmq:
     host: rabbitmq-server
