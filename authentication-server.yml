@@ -1,6 +1,14 @@
 info:
   component: OAuth Auth Server
 
+_gateway:
+  url: http://gateway-server:8080
+
+_bto:
+  basic: c2VydmVyOnRydXN0ZWRfc2VydmVy
+
+
+
 server:
   contextPath: /uaa
   port: 8081
@@ -17,8 +25,20 @@ spring:
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
-    url: jdbc:mysql://localhost:3306/umoja_auth?createDatabaseIfNotExist=true&useSSL=false
-    username: root
-    password: password
+    url: jdbc:mysql://mysql_server:3306/umoja_auth?createDatabaseIfNotExist=true&useSSL=false
+    username: umoja
+    password: all$4interfaceft@umoja
     driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: rabbitmq-server
+    port: 5672
+    username: guest
+    password: guest
 
+consumer:
+ updateRegisterQueue: updateRegisterQueue
+ updateRegisterRoutingKey : register.update
+ rpcQueueName: remotingQueue
+
+gateway:
+  url: http://gateway-server:8090/#

@@ -1,0 +1,18 @@
+info:
+  component: Turbine Server
+
+server:
+  port: 0
+turbine:
+  amqp:
+    port: 8989
+
+#management:
+#  port: 8990
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanExtractor: ERROR
+    org.springframework.cloud.sleuth.util.ExceptionUtils: ERROR
+

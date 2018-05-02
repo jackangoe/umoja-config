@@ -1,0 +1,52 @@
+#server.contextPath=/institution-service
+server:
+  port: 8083
+logging:
+  level:
+    org: INFO
+
+#endpoints.cors.allowed-origins=*
+
+management:
+  security:
+    enabled: false
+
+#spring.mvc.view.prefix= /WEB-INF/jsp/
+#spring.mvc.view.suffix= .jsp
+
+security:
+  basic:
+    enabled: false
+
+###
+# Data Source Configuration
+###
+# Hibernate
+spring:
+  mvc:
+   view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: false
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  datasource:
+    url: jdbc:mysql://localhost:3306/umoja_institutions?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+consumer:
+ createInstitutionQueue: registerCreateInstitutionQueue
+ createInstitutionRoutingKey : institution.created
+
+gateway:
+  url: http://localhost:8090/#

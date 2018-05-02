@@ -1,0 +1,230 @@
+server:
+    port: 8080
+
+security:
+  user:
+    password: none
+#  oauth2:
+#    client:
+#      clientId: gateway
+#      clientSecret: 123456
+#      accessTokenUri: http://localhost:8081/uaa/oauth/token
+#      userAuthorizationUri: http://localhost:8081/uaa/oauth/authorize
+#    resource:
+#      userInfoUri: http://localhost:8081/uaa/user
+#      prefer-token-info: false
+
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+    oauth:
+      path: /uaa/**
+      url: http://authicarion-server:8081/uaa
+
+    account-service:
+      path: /account/**
+      url: http://localhost:8082/account
+      sensitiveHeaders:
+
+    institution-service:
+      path: /institution/**
+      url: http://localhost:8083/institution
+      sensitiveHeaders:
+
+    region-service:
+      path: /regions/**
+      url: http://localhost:8083/regions
+      sensitiveHeaders:
+
+    branch-service:
+      path: /branches/**
+      url: http://localhost:8083/branches
+      sensitiveHeaders:
+
+    agency-service:
+      path: /agency/**
+      url: http://localhost:8083/agency
+      sensitiveHeaders:
+
+    holiday-service:
+      path: /holidays/**
+      url: http://localhost:8083/holidays
+      sensitiveHeaders:
+
+    services-details-service:
+      path: /services/**
+      url: http://localhost:8083/services
+      sensitiveHeaders:
+
+    apps-service:
+      path: /apps/**
+      url: http://localhost:8084/apps
+      sensitiveHeaders:
+    menu-service:
+      path: /menu/**
+      url: http://localhost:8081/uaa/menu
+      sensitiveHeaders: Authorization
+
+    audit-service:
+      path: /auditlogs/**
+      url: http://localhost:8085/auditlogs
+      sensitiveHeaders:
+
+    device-service:
+      path: /device/**
+      url: http://localhost:8086/device
+      sensitiveHeaders:
+
+    support-service:
+      path: /supports/**
+      url: http://localhost:8087/supports
+      sensitiveHeaders:
+
+    complaint-service:
+      path: /complaints/**
+      url: http://localhost:8090/customers/complaints
+      sensitiveHeaders:
+
+    dictionary-service:
+      path: /dictionary/**
+      url: http://localhost:8088/dictionary
+      sensitiveHeaders:
+    iswitch-service:
+      path: /iswitch/**
+      url: http://localhost:8089/iswitch
+      sensitiveHeaders:
+
+    assets-inventory-service:
+      path: /inventory/**
+      url: http://localhost:8091/inventory
+      sensitiveHeaders:
+
+    supplier-service:
+      path: /suppliers/**
+      url: http://localhost:8092/suppliers
+      sensitiveHeaders:
+
+    invoice-service:
+      path: /invoice/**
+      url: http://localhost:8092/invoices
+      sensitiveHeaders:
+
+    receipt-service:
+      path: /receipt/**
+      url: http://localhost:8092/receipt
+      sensitiveHeaders:
+
+    accounting-service:
+      path: /accounting/**
+      url: http://localhost:8093/accounting
+      sensitiveHeaders:
+
+    customer-service:
+      path: /customers/**
+      url: http://localhost:8094/customers
+      sensitiveHeaders:
+
+    teller-service:
+      path: /teller/**
+      url: http://localhost:8095/teller
+      sensitiveHeaders:
+
+    products-service:
+      path: /products/**
+      url: http://localhost:8096/products
+      sensitiveHeaders:
+
+    transaction-service:
+      path: /transactions/**
+      url: http://localhost:8097/transactions
+      sensitiveHeaders:
+
+    transaction-rule-service:
+      path: /transactionrule/**
+      url: http://localhost:8097/transactionrule
+      sensitiveHeaders:
+
+    transaction-standingorder-service:
+      path: /standingorder/**
+      url: http://localhost:8097/standingorder
+      sensitiveHeaders:
+
+    transaction-accrual-service:
+      path: /accruals/**
+      url: http://localhost:8097/accruals
+      sensitiveHeaders:
+
+    crb-identity-service:
+      path: /identity/**
+      url: http://localhost:8098/identity
+      sensitiveHeaders:
+
+    crb-score-service:
+      path: /score/**
+      url: http://localhost:8098/score
+      sensitiveHeaders:
+
+    crb-delinquency-service:
+      path: /delinquency/**
+      url: http://localhost:8098/delinquency
+      sensitiveHeaders:
+
+    aml-service:
+      path: /aml/**
+      url: http://localhost:8099/aml
+      sensitiveHeaders:
+
+    till-service:
+      path: /till/**
+      url: http://localhost:8100/till
+      sensitiveHeaders:
+
+    till-branch-service:
+      path: /branch/till/**
+      url: http://localhost:8100/branch/till
+      sensitiveHeaders:
+
+    dashboard-service:
+      path: /chat/**
+      url: http://localhost:8101/chat
+      sensitiveHeaders:
+
+    document-management-service:
+      path: /document/**
+      url: http://localhost:8102/document
+      sensitiveHeaders:
+
+    customer-account-service:
+      path: /customer/account/**
+      url: http://localhost:8103/customer/account
+      sensitiveHeaders:
+
+    loans-service:
+      path: /loans/**
+      url: http://localhost:8104/loans
+      sensitiveHeaders:
+
+    loans-settings-service:
+      path: /settings/**
+      url: http://localhost:8105/settings
+      sensitiveHeaders:
+
+    retail-pos-service:
+      path: /retail/**
+      url: http://localhost:8106/retail
+      sensitiveHeaders:
+
+    sales-service:
+      path: /sales/**
+      url: http://localhost:8107/sales
+      sensitiveHeaders:
+
+    payment-service:
+      path: /payments/**
+      url: http://localhost:8108/payments
+      sensitiveHeaders:
+
+    messaging-service:
+      path: /message/**
+      url: http://localhost:8109/message
+      sensitiveHeaders:

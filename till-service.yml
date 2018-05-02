@@ -1,0 +1,41 @@
+#server.contextPath=/till-service
+server:
+  port: 8100
+logging:
+  level:
+    org: INFO
+
+#endpoints.cors.allowed-origins=*
+
+management:
+  security:
+    enabled: false
+
+#spring.mvc.view.prefix= /WEB-INF/jsp/
+#spring.mvc.view.suffix= .jsp
+
+security:
+  basic:
+    enabled: false
+
+###
+# Data Source Configuration
+###
+# Hibernate
+spring:
+  mvc:
+   view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: false
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  datasource:
+    url: jdbc:mysql://localhost:3306/umoja_till?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
