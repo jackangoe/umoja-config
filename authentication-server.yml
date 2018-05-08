@@ -41,4 +41,4 @@ consumer:
  rpcQueueName: remotingQueue
 
 gateway:
-  url: http://gateway-server:8090/#
+  url: https://www.upayafrica.com/
