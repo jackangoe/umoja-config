@@ -25,7 +25,7 @@ spring:
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
-    url: jdbc:mysql://mysql_server:3306/umoja_auth?useSSL=false
+    url: jdbc:mysql://mysql_server:30001/umoja_auth?useSSL=false
     username: ${MYSQL_USER}
     password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
