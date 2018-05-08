@@ -1,9 +1,7 @@
 #server.contextPath=/account-service
 server:
   port: 80
-logging:
-  level:
-    org: INFO
+
 
 #endpoints.cors.allowed-origins=*
 
@@ -34,7 +32,7 @@ spring:
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
-    url: jdbc:mysql://localhost:3306/umoja_auth?useSSL=false
+    url: jdbc:mysql://mysql_server:3306/umoja_auth?useSSL=false
     username: ${MYSQL_USER}
     password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
