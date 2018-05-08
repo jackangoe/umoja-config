@@ -19,7 +19,7 @@ zuul:
   routes:
     oauth:
       path: /uaa/**
-      url: http://authentication-server
+      url: http://authentication-server:8081
 
     account-service:
       path: /account/**
