@@ -40,5 +40,5 @@ consumer:
  updateRegisterRoutingKey : register.update
  rpcQueueName: remotingQueue
 
-gateway:
+appfrontend:
   url: https://www.upayafrica.com
