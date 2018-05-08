@@ -23,7 +23,7 @@ zuul:
 
     account-service:
       path: /account/**
-      url: http://localhost:8082/account
+      url: http://account-service/account
       sensitiveHeaders:
 
     institution-service:
