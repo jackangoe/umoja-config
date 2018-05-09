@@ -37,7 +37,7 @@ spring:
     password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
