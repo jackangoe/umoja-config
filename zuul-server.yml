@@ -28,32 +28,32 @@ zuul:
 
     institution-service:
       path: /institution/**
-      url: http://localhost:8083/institution
+      url: http://institution-service/institution
       sensitiveHeaders:
 
     region-service:
       path: /regions/**
-      url: http://localhost:8083/regions
+      url: http://institution-service/regions
       sensitiveHeaders:
 
     branch-service:
       path: /branches/**
-      url: http://localhost:8083/branches
+      url: http://institution-service/branches
       sensitiveHeaders:
 
     agency-service:
       path: /agency/**
-      url: http://localhost:8083/agency
+      url: http://institution-service/agency
       sensitiveHeaders:
 
     holiday-service:
       path: /holidays/**
-      url: http://localhost:8083/holidays
+      url: http://institution-service/holidays
       sensitiveHeaders:
 
     services-details-service:
       path: /services/**
-      url: http://localhost:8083/services
+      url: http://institution-service/services
       sensitiveHeaders:
 
     apps-service:
