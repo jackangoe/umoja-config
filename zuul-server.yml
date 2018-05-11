@@ -24,7 +24,6 @@ zuul:
     account-service:
       path: /account/**
       url: http://account-service/account
-      sensitiveHeaders:
 
     institution-service:
       path: /institution/**
@@ -122,7 +121,6 @@ zuul:
     customer-service:
       path: /customers/**
       url: http://customer-service/customers
-      sensitiveHeaders:
 
     teller-service:
       path: /teller/**
@@ -197,7 +195,6 @@ zuul:
     customer-account-service:
       path: /customer/account/**
       url: http://customer-account-service/customer/account
-      sensitiveHeaders:
 
     loans-service:
       path: /loans/**
@@ -222,9 +219,7 @@ zuul:
     payment-service:
       path: /payments/**
       url: http://payment-service/payments
-      sensitiveHeaders:
 
     messaging-service:
       path: /message/**
       url: http://messaging-service/message
-      sensitiveHeaders:
