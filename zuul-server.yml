@@ -216,7 +216,10 @@ zuul:
     loans-settings-service:
       path: /settings/**
       url: http://loans-settings-service/settings
-      sensitiveHeaders:
+      
+    operational-settings-service:
+      path: /operational/settings/**
+      serviceId: operational-settings-service
 
     retail-pos-service:
       path: /retail/**
