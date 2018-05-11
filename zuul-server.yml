@@ -40,37 +40,31 @@ zuul:
     institution-service:
       path: /institution/**
       url: http://institution-service/institution
-      sensitiveHeaders:
 
     region-service:
       path: /regions/**
       url: http://institution-service/regions
-      sensitiveHeaders:
 
     branch-service:
       path: /branches/**
       url: http://institution-service/branches
-      sensitiveHeaders:
 
     agency-service:
       path: /agency/**
       url: http://institution-service/agency
-      sensitiveHeaders:
 
     holiday-service:
       path: /holidays/**
       url: http://institution-service/holidays
-      sensitiveHeaders:
 
     services-details-service:
       path: /services/**
       url: http://institution-service/services
-      sensitiveHeaders:
 
     apps-service:
       path: /apps/**
       url: http://apps-service/apps
-      sensitiveHeaders:
+
     menu-service:
       path: /menu/**
       url: http://authentication-server/uaa/menu
@@ -79,56 +73,46 @@ zuul:
     audit-service:
       path: /auditlogs/**
       url: http://audit-service/auditlogs
-      sensitiveHeaders:
 
     device-service:
       path: /device/**
       url: http://device-service/device
-      sensitiveHeaders:
 
     support-service:
       path: /supports/**
       url: http://support-service/supports
-      sensitiveHeaders:
 
     complaint-service:
       path: /complaints/**
       url: http://complaint-service/customers/complaints
-      sensitiveHeaders:
 
     dictionary-service:
       path: /dictionary/**
       url: http://dictionary-service/dictionary
-      sensitiveHeaders:
+
     iswitch-service:
       path: /iswitch/**
       url: http://iswitch-service/iswitch
-      sensitiveHeaders:
 
     assets-inventory-service:
       path: /inventory/**
       url: http://assets-inventory-service/inventory
-      sensitiveHeaders:
 
     supplier-service:
       path: /suppliers/**
       url: http://supplier-service/suppliers
-      sensitiveHeaders:
 
     invoice-service:
       path: /invoice/**
       url: http://invoice-service/invoices
-      sensitiveHeaders:
 
     receipt-service:
       path: /receipt/**
       url: http://receipt-service/receipt
-      sensitiveHeaders:
 
     accounting-service:
       path: /accounting/**
       url: http://accounting-service/accounting
-      sensitiveHeaders:
 
     customer-service:
       path: /customers/**
@@ -137,72 +121,58 @@ zuul:
     teller-service:
       path: /teller/**
       url: http://teller-service/teller
-      sensitiveHeaders:
 
     products-service:
       path: /products/**
       url: http://products-service/products
-      sensitiveHeaders:
 
     transaction-service:
       path: /transactions/**
       url: http://transaction-service/transactions
-      sensitiveHeaders:
 
     transaction-rule-service:
       path: /transactionrule/**
       url: http://transaction-service/transactionrule
-      sensitiveHeaders:
 
     transaction-standingorder-service:
       path: /standingorder/**
       url: http://transaction-service/standingorder
-      sensitiveHeaders:
 
     transaction-accrual-service:
       path: /accruals/**
       url: http://transaction-service/accruals
-      sensitiveHeaders:
 
     crb-identity-service:
       path: /identity/**
       url: http://crb-identity-service/identity
-      sensitiveHeaders:
 
     crb-score-service:
       path: /score/**
       url: http://crb-identity-service/score
-      sensitiveHeaders:
 
     crb-delinquency-service:
       path: /delinquency/**
       url: http://crb-identity-service/delinquency
-      sensitiveHeaders:
 
     aml-service:
       path: /aml/**
       url: http://aml-service/aml
-      sensitiveHeaders:
 
     till-service:
       path: /till/**
       url: http://till-service/till
-      sensitiveHeaders:
 
     till-branch-service:
       path: /branch/till/**
       url: http://till-service/branch/till
-      sensitiveHeaders:
 
     dashboard-service:
       path: /chat/**
       url: http://dashboard-service/chat
-      sensitiveHeaders:
 
     document-management-service:
       path: /document/**
       url: http://document-management-service/document
-      sensitiveHeaders:
 
     customer-account-service:
       path: /customer/account/**
@@ -211,7 +181,6 @@ zuul:
     loans-service:
       path: /loans/**
       url: http://loans-service/loans
-      sensitiveHeaders:
 
     loans-settings-service:
       path: /settings/**
@@ -224,12 +193,10 @@ zuul:
     retail-pos-service:
       path: /retail/**
       url: http://retail-pos-service/retail
-      sensitiveHeaders:
 
     sales-service:
       path: /sales/**
       url: http://sales-service/sales
-      sensitiveHeaders:
 
     payment-service:
       path: /payments/**
