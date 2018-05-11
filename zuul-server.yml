@@ -20,6 +20,10 @@ hystrix:
       execution:
         timeout:
           enabled: false
+#  host:
+#    connect-timeout-millis: 20000
+#    socket-timeout-millis: 20000
+    
 
 zuul:
   sensitive-headers: Cookie,Set-Cookie
@@ -31,6 +35,7 @@ zuul:
     account-service:
       path: /account/**
       serviceId: account-service
+      stripPrefix: false
 
     institution-service:
       path: /institution/**
