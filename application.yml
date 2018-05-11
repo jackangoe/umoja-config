@@ -4,6 +4,9 @@ logging:
 
 security.basic.enabled: false
 
+# JPA
+spring.jpa.hibernate.ddl-auto: none
+
 spring:
   rabbitmq:
     host: rabbitmq
