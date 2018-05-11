@@ -34,8 +34,7 @@ zuul:
 
     account-service:
       path: /account/**
-      serviceId: account-service
-      stripPrefix: false
+      url: http://account-service/account
 
     institution-service:
       path: /institution/**
