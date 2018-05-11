@@ -26,6 +26,7 @@ hystrix:
     
 
 zuul:
+  ribbonIsolationStrategy: THREAD
   sensitive-headers: Cookie,Set-Cookie
   routes:
     oauth:
