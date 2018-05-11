@@ -30,7 +30,7 @@ zuul:
 
     account-service:
       path: /account/**
-      url: http://account-service/account
+      serviceId: account-service
 
     institution-service:
       path: /institution/**
