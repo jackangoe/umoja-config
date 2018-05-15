@@ -32,6 +32,10 @@ zuul:
     oauth:
       path: /uaa/**
       url: http://authentication-server/uaa
+      
+    register-service:
+      path: /register/**
+      url: http://register-service/register
 
     account-service:
       path: /account/**
