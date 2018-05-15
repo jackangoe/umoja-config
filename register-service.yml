@@ -1,0 +1,37 @@
+info:
+  component: OAuth Auth Server
+
+_gateway:
+  url: http://gateway-server:8080
+
+_bto:
+  basic: c2VydmVyOnRydXN0ZWRfc2VydmVy
+
+
+
+server:
+  contextPath: /uaa
+  port: 80
+
+spring:
+  mvc:
+   view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: false
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  datasource:
+    url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
+    username: ${MYSQL_USER}
+    password: ${MYSQL_USER_PASSWORD}
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+consumer:
+ updateRegisterQueue: updateRegisterQueue
+ updateRegisterRoutingKey : register.update
+ rpcQueueName: remotingQueue
