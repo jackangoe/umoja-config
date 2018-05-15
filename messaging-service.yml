@@ -36,5 +36,7 @@ spring:
 
 consumer:
  queue: emailQueue
+ queueSMS: smsQueue
  routingKey : register.created
+ routingKeySMS : register.created.send.sms
 
