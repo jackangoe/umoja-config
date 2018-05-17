@@ -10,7 +10,6 @@ _bto:
 
 
 server:
-  contextPath: /uaa
   port: 80
 
 spring:
