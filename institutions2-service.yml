@@ -1,4 +1,4 @@
-#server.contextPath=/customer-service
+#server.contextPath=/institution-service
 server:
   port: 80
 
@@ -38,8 +38,5 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 
 consumer:
- createCustomerQueue: registerCreateCustomerQueue
- createCustomerRoutingKey : customer.created
-
-appfrontend:
-  url: https://www.upayafrica.com
+  createInstitutionQueue: registerCreateInstitutionQueue
+  createInstitutionRoutingKey : institution.created
