@@ -43,27 +43,27 @@ zuul:
 
     institution-service:
       path: /institution/**
-      url: http://institution-service/institution
+      url: http://institutions-service/institution
 
     region-service:
       path: /regions/**
-      url: http://institution-service/regions
+      url: http://institutions-service/regions
 
     branch-service:
       path: /branches/**
-      url: http://institution-service/branches
+      url: http://institutions-service/branches
 
     agency-service:
       path: /agency/**
-      url: http://institution-service/agency
+      url: http://institutions-service/agency
 
     holiday-service:
       path: /holidays/**
-      url: http://institution-service/holidays
+      url: http://institutions-service/holidays
 
     services-details-service:
       path: /services/**
-      url: http://institution-service/services
+      url: http://institutions-service/services
 
     apps-service:
       path: /apps/**
