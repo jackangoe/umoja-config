@@ -73,6 +73,11 @@ zuul:
       path: /menu/**
       url: http://authentication-server/uaa/menu
       sensitiveHeaders: Authorization
+      
+    user-group-service:
+      path: /usergroup/**
+      url: http://authentication-server/uaa/usergroup
+      sensitiveHeaders: Authorization
 
     audit-service:
       path: /auditlogs/**
