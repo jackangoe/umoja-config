@@ -1,9 +1,6 @@
 #server.contextPath=/loans-service
 server:
-  port: 8104
-logging:
-  level:
-    org: INFO
+  port: 80
 
 #endpoints.cors.allowed-origins=*
 
@@ -13,10 +10,6 @@ management:
 
 #spring.mvc.view.prefix= /WEB-INF/jsp/
 #spring.mvc.view.suffix= .jsp
-
-security:
-  basic:
-    enabled: false
 
 ###
 # Data Source Configuration
@@ -29,13 +22,13 @@ spring:
     suffix: .jsp
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
       show-sql: false
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
-    url: jdbc:mysql://localhost:3306/umoja_loans?createDatabaseIfNotExist=true&useSSL=false
-    username: root
-    password: password
+    url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
+    username: ${MYSQL_USER}
+    password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
 
