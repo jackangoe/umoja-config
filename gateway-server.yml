@@ -15,9 +15,9 @@ security:
 #      prefer-token-info: false
 
 zuul:
-  host:
-    connect-timeout-millis: 200000 # starting the connection 
-    socket-timeout-millis: 200000  # monitor the continuous incoming data flow
+ # host:
+ #   connect-timeout-millis: 200000 # starting the connection 
+ #   socket-timeout-millis: 200000  # monitor the continuous incoming data flow
   sensitive-headers: Cookie,Set-Cookie
   routes:
     oauth:
