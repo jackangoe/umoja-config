@@ -27,8 +27,8 @@ hystrix:
 
 zuul:
   host:
-    connect-timeout-millis: 30000
-    socket-timeout-millis: 30000
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
   ribbonIsolationStrategy: THREAD
   sensitive-headers: Cookie,Set-Cookie
   routes:
