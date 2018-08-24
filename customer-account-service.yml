@@ -43,8 +43,10 @@ spring:
 
 
 consumer:
+ rpcCreateCustomerAccountQueue: rpcCreateCustomerAccountQueue
  createCustomerAccountQueue: registerCreateCustomerAccountQueue
  createCustomerAccountRoutingKey : customer.account.created
+ routingKeyRpcCreateCustomerAccount: routingKeyRpcCreateCustomerAccount
 
 appfrontend:
   url: https://www.upayafrica.com
