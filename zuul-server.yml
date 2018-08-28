@@ -132,6 +132,10 @@ zuul:
       path: /teller/**
       url: http://teller-service/teller
 
+    teller-rule-service:
+      path: /tellerrule/**
+      url: http://teller-service/tellerrule
+      
     products-service:
       path: /products/**
       url: http://products-service/products
