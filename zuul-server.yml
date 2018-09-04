@@ -127,34 +127,38 @@ zuul:
     customer-service:
       path: /customers/**
       url: http://customer-service/customers
-
+      
     teller-service:
       path: /teller/**
-      url: http://teller-service/teller
+      url: http://teller-transactions-service/teller
 
     teller-rule-service:
       path: /tellerrule/**
-      url: http://teller-service/tellerrule
+      url: http://teller-transactions-service/tellerrule
       
-    products-service:
-      path: /products/**
-      url: http://products-service/products
-
     transaction-service:
       path: /transactions/**
-      url: http://transaction-service/transactions
+      url: http://teller-transactions-service/transactions
 
     transaction-rule-service:
       path: /transactionrule/**
-      url: http://transaction-service/transactionrule
+      url: http://teller-transactions-service/transactionrule
 
     transaction-standingorder-service:
       path: /standingorder/**
-      url: http://transaction-service/standingorder
+      url: http://teller-transactions-service/standingorder
+
+    open-branch-service:
+      path: /branch/**
+      url: http://teller-transactions-service/branch
 
     transaction-accrual-service:
       path: /accruals/**
-      url: http://transaction-service/accruals
+      url: http://teller-transactions-service/accruals
+        
+    products-service:
+      path: /products/**
+      url: http://products-service/products
 
     crb-identity-service:
       path: /identity/**
