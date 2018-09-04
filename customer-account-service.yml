@@ -47,6 +47,8 @@ consumer:
  createCustomerAccountQueue: registerCreateCustomerAccountQueue
  createCustomerAccountRoutingKey : customer.account.created
  routingKeyRpcCreateCustomerAccount: routingKeyRpcCreateCustomerAccount
+ rpcGetCustomerAccountQueue: rpcGetCustomerAccountQueue
+ rpcGetCustomerAccountRoutingKey : rpcGetCustomerAccountRoutingKey
 
 appfrontend:
   url: https://www.upayafrica.com
