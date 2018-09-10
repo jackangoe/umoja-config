@@ -178,11 +178,11 @@ zuul:
 
     till-service:
       path: /till/**
-      url: http://till-service/till
+      url: http://teller-transactions-service/till
 
     till-branch-service:
       path: /branch/till/**
-      url: http://till-service/branch/till
+      url: http://teller-transactions-service/branch/till
 
     dashboard-service:
       path: /chat/**
