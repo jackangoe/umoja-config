@@ -39,5 +39,5 @@ spring:
 
 consumer:
  saveAuditLogQueue: saveAuditLogQueue
- saveAuditLogRoutingKey : audit.trail.save
+ saveAuditLogRoutingKey : audit.trail.save.routing
 
