@@ -80,9 +80,9 @@ zuul:
       path: /usergroup/**
       url: http://authentication-server/uaa/usergroup
 
-    audit-service:
+    audit-trail-service:
       path: /auditlogs/**
-      url: http://audit-service/auditlogs
+      url: http://audit-trail-service/auditlogs
 
     device-service:
       path: /device/**
