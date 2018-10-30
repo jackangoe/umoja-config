@@ -20,5 +20,5 @@ appfrontend:
 icbapp:
   url: icbapp.com
 
-protocole_url:
+protocole:
   url: https
