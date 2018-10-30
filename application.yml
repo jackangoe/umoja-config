@@ -16,3 +16,9 @@ spring:
     
 appfrontend:
   url: https://www.upayafrica.com
+
+icbapp:
+  url: icbapp.com
+
+protocole_url:
+  url: https
