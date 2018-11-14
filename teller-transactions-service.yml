@@ -41,3 +41,4 @@ spring:
 consumer:
  rpcGetAccountBalanceQueue: rpcGetAccountBalanceQueue
  rpcGetAccountBalanceRoutingKey : rpcGetAccountBalanceRoutingKey
+ automateOpenBranchQueue: automateOpenBranchQueue
