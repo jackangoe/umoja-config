@@ -42,3 +42,4 @@ consumer:
  rpcGetAccountBalanceQueue: rpcGetAccountBalanceQueue
  rpcGetAccountBalanceRoutingKey : rpcGetAccountBalanceRoutingKey
  automateOpenBranchQueue: automateOpenBranchQueue
+ automateOpenBranchRoutingKey : automateOpenBranchRoutingKey
