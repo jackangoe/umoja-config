@@ -1,0 +1,15 @@
+#server.contextPath=/cron-scheduler-service
+server:
+  port: 80
+
+
+#endpoints.cors.allowed-origins=*
+
+management:
+  security:
+    enabled: false
+
+
+security:
+  basic:
+    enabled: false
