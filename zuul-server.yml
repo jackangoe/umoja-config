@@ -36,9 +36,9 @@ spring:
     password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
     
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+#ribbon:
+#  ReadTimeout: 60000
+#  ConnectTimeout: 60000
 
 zuul:
   host:
