@@ -38,7 +38,9 @@ consumer:
  queue: emailQueue
  queueSMS: smsQueue
  queueSendEmail: sendEmailQueue
+ sendTrxnSMSQueue: sendTrxnSMSQueue
  routingKey : register.created
  routingKeySMS : register.created.send.sms
  routingKeySendEmail : send.email.routing
+ routingKeySendTrxnSMS : routingKeySendTrxnSMS
 
