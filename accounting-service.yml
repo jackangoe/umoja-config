@@ -1,9 +1,7 @@
-#server.contextPath=/accounting-service
+#server.contextPath=/sales-service
 server:
-  port: 8093
-logging:
-  level:
-    org: INFO
+  port: 80
+
 
 #endpoints.cors.allowed-origins=*
 
@@ -23,19 +21,14 @@ security:
 ###
 # Hibernate
 spring:
-  mvc:
-   view:
-    prefix: /WEB-INF/jsp/
-    suffix: .jsp
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
       show-sql: false
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
   datasource:
-    url: jdbc:mysql://localhost:3306/umoja_accounting?createDatabaseIfNotExist=true&useSSL=false
-    username: root
-    password: password
+    url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
+    username: ${MYSQL_USER}
+    password: ${MYSQL_USER_PASSWORD}
     driver-class-name: com.mysql.jdbc.Driver
-
