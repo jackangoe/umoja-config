@@ -200,8 +200,8 @@ zuul:
       url: http://teller-transactions-service/branch/till
 
     dashboard-service:
-      path: /chat/**
-      url: http://dashboard-service/chat
+      path: /dashboard/**
+      url: http://dashboard-service/dashboard
 
     document-management-service:
       path: /document/**
