@@ -238,3 +238,7 @@ zuul:
     messaging-service:
       path: /message/**
       url: http://messaging-service/message
+      
+    purchase-order-invoice-service:
+      path: /purchase/**
+      url: http://purchase-order-invoice-service/purchase
