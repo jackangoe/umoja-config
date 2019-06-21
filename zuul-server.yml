@@ -240,5 +240,5 @@ zuul:
       url: http://messaging-service/message
       
     purchase-order-invoice-service:
-      path: /purchase/**
-      url: http://purchase-order-invoice-service/purchase
+      path: /items/product/**
+      url: http://purchase-order-invoice-service/items/product
