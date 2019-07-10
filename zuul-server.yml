@@ -242,3 +242,7 @@ zuul:
     purchase-order-invoice-service:
       path: /items/product/**
       url: http://purchase-order-invoice-service/items/product
+      
+    ussd-service:
+      path: /ussd/**
+      url: http://ussd-service/ussd
