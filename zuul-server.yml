@@ -123,6 +123,10 @@ zuul:
       path: /inventory/**
       url: http://assets-inventory-service/inventory
 
+    cron-scheduler-service:
+      path: /cron/**
+      url: http://cron-scheduler-service/cron
+      
     supplier-service:
       path: /suppliers/**
       url: http://supplier-service/suppliers
