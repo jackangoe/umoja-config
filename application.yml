@@ -22,3 +22,6 @@ icbapp:
 
 protocole:
   url: https
+
+accounting:
+  url: http://accounting-service
