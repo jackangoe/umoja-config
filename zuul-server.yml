@@ -250,3 +250,7 @@ zuul:
     ussd-service:
       path: /ussd/**
       url: http://ussd-service/ussd
+      
+    transaction-test-service:
+      path: /transactions_test/**
+      url: http://teller-transactions-test-service/transactions_test
