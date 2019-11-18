@@ -251,3 +251,19 @@ zuul:
     ussd-service:
       path: /ussd/**
       url: http://ussd-service/ussd
+      
+    transaction-test-service:
+      path: /transactions_test/**
+      url: http://teller-transactions-test-service/transactions_test
+      
+    teller-test-service:
+      path: /teller_test/**
+      url: http://teller-transactions-test-service/teller_test
+      
+    open-branch-test-service:
+      path: /branch_test/**
+      url: http://teller-transactions-test-service/branch_test
+      
+    till-test-service:
+      path: /till_test/**
+      url: http://teller-transactions-test-service/till_test
