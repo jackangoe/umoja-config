@@ -32,12 +32,11 @@ spring:
       show-sql: false
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
-      database-platform: org.hibernate.dialect.MySQL5Dialect
   datasource:
     url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
     username: ${MYSQL_USER}
     password: ${MYSQL_USER_PASSWORD}
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     
 consumer:
  rpcGetAccountBalanceQueue: rpcGetAccountBalanceQueue
