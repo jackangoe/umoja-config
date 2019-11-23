@@ -7,22 +7,35 @@ security:
     enabled: false
 
 # JPA
+# spring:
+#   mvc:
+#    view:
+#     prefix: /WEB-INF/jsp/
+#     suffix: .jsp
+#   jpa:
+#     hibernate:
+#       ddl-auto: none
+#       show-sql: false
+#       naming:
+#         strategy: org.hibernate.cfg.ImprovedNamingStrategy
+#   datasource:
+#     driverClassName: com.mysql.cj.jdbc.Driver
+#     url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
+#     username: ${MYSQL_USER}
+#     password: ${MYSQL_USER_PASSWORD}
+#   rabbitmq:
+#     host: rabbitmq
+#     port: 5672
+#     username: guest
+#     password: guest
+    
 spring:
-  mvc:
-   view:
-    prefix: /WEB-INF/jsp/
-    suffix: .jsp
   jpa:
     hibernate:
       ddl-auto: none
       show-sql: false
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql_server:3306/${MYSQL_DATABASE_NAME}?useSSL=false
-    username: ${MYSQL_USER}
-    password: ${MYSQL_USER_PASSWORD}
   rabbitmq:
     host: rabbitmq
     port: 5672
