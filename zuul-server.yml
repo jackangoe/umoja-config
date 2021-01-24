@@ -219,7 +219,11 @@ zuul:
     loans-service:
       path: /loans/**
       url: http://loans-service/loans
-
+    
+    loans-service-dev:
+      path: /loans_v3/**
+      url: http://loans-service-dev/loans
+      
     loans-settings-service:
       path: /settings/**
       url: http://loans-settings-service/settings
